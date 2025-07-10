@@ -1,0 +1,55 @@
+@host = http://localhost:5226
+
+### Get all users (should be empty)
+GET {{host}}/users
+Accept: application/json
+
+### Create user 'alice'
+POST {{host}}/users
+Content-Type: application/json
+
+{
+  "username": "alice",
+  "userAge": 30
+}
+
+### Create user 'bob'
+POST {{host}}/users
+Content-Type: application/json
+
+{
+  "username": "bob",
+  "userAge": 25
+}
+
+### Get all users (now contains alice & bob)
+GET {{host}}/users
+Accept: application/json
+
+### Get user by username ('alice')
+GET {{host}}/users/alice
+Accept: application/json
+
+### Update 'alice' age to 35
+PUT {{host}}/users/alice
+Content-Type: application/json
+
+{
+  "username": "alice",
+  "userAge": 35
+}
+
+### Get 'alice' after update
+GET {{host}}/users/alice
+Accept: application/json
+
+### Delete user 'bob'
+DELETE {{host}}/users/bob
+
+### Get all users (should contain only alice)
+GET {{host}}/users
+Accept: application/json
+
+### Get Metrics 
+GET {{host}}/metrics
+Accept: application/json
