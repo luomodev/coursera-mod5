@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Cousera-Mod5")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+51537ea0c3628b6082c57252a8e2f95d71155be2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Cousera-Mod5")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Cousera-Mod5")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
